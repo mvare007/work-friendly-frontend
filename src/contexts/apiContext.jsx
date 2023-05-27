@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const ApiContext = createContext();
 
-const ApiProvider = ({ children, urlSuffix }) => {
+const ApiProvider = ({ children }) => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
